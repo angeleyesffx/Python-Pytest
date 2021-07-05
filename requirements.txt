@@ -1,0 +1,9 @@
+selenium
+requests
+pytest
+pytest-bdd
+pytest-env
+Selenium-Screenshot
+pymysql2
+PyMySQL
+PyYaml

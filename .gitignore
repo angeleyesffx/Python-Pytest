@@ -1,3 +1,16 @@
+# VSCode
+.vscode/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Python-Behave
+Python-Pytest/.pytest_cache
+Python-Pytest/pytest-env
+Python-Pytest/venv
+Python-Pytest/.idea
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +140,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
