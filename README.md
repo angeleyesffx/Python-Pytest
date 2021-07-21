@@ -64,8 +64,7 @@ You can find information about pytest framework here: https://pytest.org
 
 You can find information more information about command line here: https://docs.python.org/3/using/cmdline.html
 
-**IMPORTANT ---->>>>  The name of the files .py in the folder steps MUST to start with the word "test". Pytest only 
-collect the tests inside the files with the name like "test_your_step.py"** 
+**IMPORTANT ---->>>>  The name of the files .py in the folder steps MUST to start with the word "test". Pytest only collect the tests inside the files with the name like "test_your_step.py"** 
 
 For execute the default configuration on pytest.ini command line below:
 
