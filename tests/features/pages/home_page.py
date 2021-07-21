@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from tests.features.pages.base_page import BasePage
 
 
@@ -15,3 +16,15 @@ class HomePage(BasePage):
         "slogan": "hero__title",
         "filter_on_search_page": "js_filterlist",
     }
+=======
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time
+
+
+class HomePage():
+
+    def __init__(self, driver):
+        self.driver = driver
+
+>>>>>>> 4cae239e836e11bde80325c4f762c83f7b66419f

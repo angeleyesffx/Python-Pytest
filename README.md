@@ -1,5 +1,7 @@
 # Python-Pytest
+
 https://blog.testproject.io/2019/05/16/python-testing-framework-pros-cons/
+
 **Install Python/pytest framework**
 
 **IMPORTANT ---->>>>  This automation needs Python 3.8 or above**
@@ -107,4 +109,8 @@ For execute a specific WIP scenario, or a list of WIP scenarios use above scenar
 
 Example:
       
+<<<<<<< HEAD
 *  `pytest -m wip --environment=dev --browser=chrome -v [root_path] -capture=no`
+=======
+*  `pytest -m wip --environment=dev --browser=chrome -v [root_path] -capture=no`
+>>>>>>> 4cae239e836e11bde80325c4f762c83f7b66419f
