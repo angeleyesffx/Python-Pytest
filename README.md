@@ -41,6 +41,28 @@ Download links for your Driver:
 | Firefox:| https://github.com/mozilla/geckodriver/releases                       | 
 | Safari: | https://webkit.org/blog/6900/webdriver-support-in-safari-10/          | 
 
+**Linux Ubuntu Reinstall**
+If you have a Drive installed, and you need to update it:
+
+* `sudo apt-get --only-upgrade install google-chrome-stable`
+
+***Step 1: Delete it***
+* `sudo rm -f /usr/bin/chromedriver`
+* `sudo rm -f /usr/local/bin/chromedriver`
+* `sudo rm -f /usr/local/share/chromedriver`
+
+***Step 2: Download, Update and install dependencies***
+* `sudo apt update -y && sudo apt-get install -y libxss1 libappindicator1 libindicator7 xvfb unzip`
+
+***Step 3: Download driver and unzip it***
+* `wget https://chromedriver.storage.googleapis.com/{driver_version}/chromedriver_linux64.zip` 
+* `unzip chromedriver_linux64.zip`
+* `chmod +x chromedriver`
+
+***Step 4: Move the driver executable and create symlinks***
+* `sudo mv -f chromedriver /usr/local/share/chromedriver`
+* `sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver` 
+* `sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver` 
 
 For Mac:
 https://www.swtestacademy.com/install-chrome-driver-on-mac/
@@ -51,7 +73,7 @@ For Linux Ubuntu:
 ***Chrome:***
 
 ***Step 1: Download Geckodriver***
-*   `wget -N https://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip -P ~/`
+*   `wget -N https://chromedriver.storage.googleapis.com/{driver_version}/chromedriver_linux64.zip -P ~/`
 
 ***Step 2: Extract the file***
 *   `tar -xvzf chomedriver*`
@@ -64,7 +86,7 @@ For Linux Ubuntu:
 ***Firefox:***
 
 ***Step 1: Download Geckodriver***
-*   `wget https://github.com/mozilla/geckodriver/releases/download/v0.29.1/geckodriver-v0.29.1-linux64.tar.gz`
+*   `wget https://github.com/mozilla/geckodriver/releases/download/{driver_version}/geckodriver-{driver_version}-linux64.tar.gz`
 
 ***Step 2: Extract the file***
 *   `tar -xvzf geckodriver*`
