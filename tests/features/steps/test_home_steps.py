@@ -9,8 +9,7 @@ from tests.features.pages.home_page import HomePage
 from tests.features.datapool import DATA_ACCESS
 
 
-@scenario('../search.feature','Search the terms on Google',
-           example_converters=dict(data=str))
+@scenario('../search.feature', 'Search the terms on Google')
 
 
 
@@ -24,7 +23,7 @@ def navigate_to_home_page(driver):
     assert driver.current_url, "{}".format(homePage.project_url)
 
 
-@when(parsers.parse('I search for <data>'))
+@when(parsers.parse('I search for {data}'), converters=dict(data=str))
 def search_for(driver, data):
     homePage = Singleton.getInstance(driver, HomePage)
     search_bar = driver.find_element_by_name(homePage.search_bar)
